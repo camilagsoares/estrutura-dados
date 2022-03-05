@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main () {
+int main()
+{
     printf("******************* \n");
     printf("Bem vindo ao jogo \n");
     printf("******************* \n");
@@ -12,12 +13,21 @@ int main () {
     scanf("%d", &chute);
     // printf("Seu chute foi %d \n", chute);
 
-    if (chute == numerosecreto) {
-    printf("Parabens,voce acertou! \n");
+    if (chute == numerosecreto)
+    {
+        printf("Parabens,voce acertou! \n");
+    }
+    else
+    {
 
-    } else {
-    printf("Voce errou! \n");
+        if (chute > numerosecreto)
+        {
+            printf("Seu chute é maior que o número secreto \n");
+        }
 
+        if (chute < numerosecreto) {
+            printf("Seu chute é menor que o número secreto \n");
+        }
     }
 
     return 0;
